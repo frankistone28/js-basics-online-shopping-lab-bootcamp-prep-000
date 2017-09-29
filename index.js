@@ -80,13 +80,12 @@ function total() {
 }
 
 function removeFromCart(item) {
-    var cl = cart.length;
     var itemInCart = false;
 
-    for (var i = 0; i < cl.length; i++) {
+    for (var i = 0; i < cart.length; i++) {
       if (cart[i].hasOwnProperty(item)) {
         itemInCart = true;
-        cart = cart.splice(i,1);
+        cart.splice(i,1);
         break;
       }
     }
