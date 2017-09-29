@@ -105,6 +105,6 @@ function placeOrder(cardNumber) {
     else{
       var payOut = total();
       cart.splice(0);
-      console.log(`Your total cost is $${payOut}, which will be charged to the card ${cardNumber}.`)
+      console.log(`Your total cost is $${payOut}, which will be charged to the card ${cardNumber}.`);
     }
 }
